@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color:#ebca9b
+}
+
+h2, h3{
+  color: #573402;
+}
+
+.home {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-section button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #001326;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-section button:hover {
+  background-color: #012955;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.reviews-section {
+  order: 1;
+  flex: 1;
+}
+
+.games-section {
+  order: 2;
+  flex: 1;
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #032f6e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Add some margin for spacing */
+  margin-bottom: 20px; /* Add margin bottom to separate from review list */
+}
+
+.btn-primary:hover {
+  background-color: #001225;
+}
+
+/* responsive design */
+@media (min-width: 768px) {
+  .content-section {
+    flex-direction: row;
+  }
+
+  .reviews-section {
+    order: 1;
+    flex: 2;
+  }
+
+  .games-section {
+    order: 2;
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews-section {
+    flex: 2;
+  }
+
+  .games-section {
+    flex: 1;
+  }
+}
